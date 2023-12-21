@@ -14,4 +14,4 @@ RUN echo "server { \
 }" > /etc/nginx/conf.d/default.conf
 
 # Expose the HTTPS port
-EXPOSE 443
+EXPOSE 80
