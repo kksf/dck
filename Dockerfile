@@ -9,7 +9,7 @@ COPY ./website /usr/share/nginx/html
 
 # Configure Nginx to use the SSL certificate
 RUN echo "server { \
-    listen 443 ssl; \
+    listen 80, 443 ssl; \
     server_name chess-fe.adaptable.app; \
     ssl_certificate /etc/nginx/certs/certificate.crt; \
     ssl_certificate_key /etc/nginx/certs/certificate.key; \
